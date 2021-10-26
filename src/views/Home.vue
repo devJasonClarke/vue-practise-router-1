@@ -1,18 +1,46 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Home code Lover</h1>
+
+    <div class="l" id="aa">
+    <b>Heading 1</b> <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui
+      expedita, eligendi voluptatibus, non repellat, odio et ipsam nisi quis
+      ipsum nihil. Perspiciatis repellendus adipisci optio distinctio aut harum!
+      Vel!
+    </div>
+    <div class="l" id="bb">
+    <b>Heading 2</b> <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui
+      expedita, eligendi voluptatibus, non repellat, odio et ipsam nisi quis
+      ipsum nihil. Perspiciatis repellendus adipisci optio distinctio aut harum!
+      Vel!
+    </div>
+    <div class="l" id="cc">
+    <b>Heading 3</b> <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui
+      expedita, eligendi voluptatibus, non repellat, odio et ipsam nisi quis
+      ipsum nihil. Perspiciatis repellendus adipisci optio distinctio aut harum!
+      Vel!
+    </div>
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+<style lang="scss" scoped>
+.l{
+  height: 50vh;
 }
-</script>
+
+  #aa{
+background-color:red;
+
+}
+#bb{
+background-color:green;
+}
+#cc{
+  background-color:gold;
+}
+
+</style>
+
+<script></script>

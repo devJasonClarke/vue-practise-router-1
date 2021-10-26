@@ -1,12 +1,44 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <TheNavigation />
+  <router-view> </router-view>
 </template>
+<script>
+import gsap from "gsap";
+import TheNavigation from "@/components/TheNavigation";
+export default {
+  components: {
+    TheNavigation,
+  },
+  methods: {
+    beforeEnter(el) {
+      gsap.set(el, {
+        y: 250,
+        opacity: 0,
+      });
+    },
+    enter(el, done) {
+      gsap.to(el, {
+        duration: 0.5,
+        y: 0,
+        opacity: 1,
+        onComplete: done,
+      });
+    },
+  },
+};
+</script>
 
 <style lang="scss">
+#1 {
+  background-color: royalblue;
+  height: 200px;
+}
+#2 {
+  background-color: lightpink;
+}
+#3 {
+  background-color: lavenderblush;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
